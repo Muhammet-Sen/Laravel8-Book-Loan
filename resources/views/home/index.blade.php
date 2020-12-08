@@ -3,7 +3,7 @@
 @section('keywords','Kitap, kütüphane,library,book')
 @section('title','Online | Library')
 @section('description')
-    Kamil Güleç Kütüphaseni resmi web sayfası.
+    Kamil Güleç Kütüphaseni resmi web sayfasıdır.
 @endsection
 
 @section('content')
