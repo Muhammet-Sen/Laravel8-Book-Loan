@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href="./index.html"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                <a href="./"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
             </div>
             <div class="header-right">
                 <img src="{{asset('assets')}}/img/icons/search.png" alt="" class="search-trigger">
