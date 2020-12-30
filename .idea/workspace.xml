@@ -19,15 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce38b8f-4c0f-422b-b65a-c479b58062be" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+    <list default="true" id="9ce38b8f-4c0f-422b-b65a-c479b58062be" name="Default Changelist" comment="admin panel template updated">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_101957_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_102959_category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,14 +176,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lMotTTMjeysrAwyB4u4PAfqoV4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -185,6 +196,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PHP\library\resources\views\home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PHP\library\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,7 +222,11 @@
       <workItem from="1607432087765" duration="3671000" />
       <workItem from="1607437309505" duration="663000" />
       <workItem from="1607441305514" duration="1633000" />
-      <workItem from="1608705960666" duration="8029000" />
+      <workItem from="1608705960666" duration="8987000" />
+      <workItem from="1609171155512" duration="8556000" />
+      <workItem from="1609236295042" duration="13056000" />
+      <workItem from="1609319229679" duration="3971000" />
+      <workItem from="1609345780617" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1607441504742</created>
@@ -217,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607441504742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="admin panel template added">
+      <created>1608714374120</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608714374120</updated>
+    </task>
+    <task id="LOCAL-00003" summary="admin panel template added">
+      <created>1608714582221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608714582221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,29 +268,47 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="admin panel template added" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin panel template added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1608706186114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1608706186114" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609176877839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609176877839" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607421514117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607421514117" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1608710809155">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609177337053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608710809155" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1609177337053" />
+    <state x="763" y="243" key="NewPhpClassDialog" timestamp="1609171707308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609171707308" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1609246625269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609246625269" />
+    <state x="821" y="222" key="RollbackChangesDialog" timestamp="1608714727255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="821" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608714727255" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1607437375951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607437375951" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607441515004">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608715030953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607441515004" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608715030953" />
   </component>
 </project>
