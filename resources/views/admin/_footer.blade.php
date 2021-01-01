@@ -5,11 +5,7 @@
     </div>
 </footer>
 
-</div>
-<!-- main-panel ends -->
-</div>
-<!-- page-body-wrapper ends -->
-</div>
+
 <!-- container-scroller -->
 <!-- plugins:js -->
 <script src="{{asset('assets')}}/admin/assets/vendors/js/vendor.bundle.base.js"></script>

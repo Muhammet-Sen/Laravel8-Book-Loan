@@ -20,8 +20,8 @@ class CreateCategoriesTable extends Migration
             $table->string('keywords')->nullable();
             $table->string('description')->nullable();
             $table->string('image',100)->nullable();
-            $table->string('status',5)->nullable()->default('False');
-            $table->timestamps();//create created_at and updated_at
+            $table->string('status',5)->nullable()->default('false');
+            $table->timestamps(); //created_at, updated_at
         });
     }
 

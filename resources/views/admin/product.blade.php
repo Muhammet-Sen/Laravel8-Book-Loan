@@ -7,7 +7,7 @@
             <div class="card-body">
                 <h4 class="card-title">Table with contextual classes</h4>
                 <p class="card-description"> Add class <code>.table-{color}</code> </p>
-                <a href="{{route('admin_category_add')}}" type="button" class="btn btn-block btn-info" style="width: 200px">Add Category</a>
+                <a href="{{route('admin_product_add')}}" type="button" class="btn btn-block btn-info" style="width: 200px">Add Product</a>
                 <table class="table table-bordered">
                     <thead>
                     <tr>
@@ -31,8 +31,8 @@
                         <td>{{$rs->description}}</td>
                         <td> {{$rs->status}}</td>
                         <td> {{$rs->keywords}}</td>
-                        <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">Edit</a> </td>
-                        <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')"> Delete </a></td>
+                        <td><a href="{{route('admin_product_edit', ['id' => $rs->id])}}">Edit </a> </td>
+                        <td><a href="{{route('admin_product_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')"> Delete </a></td>
                     </tr>
                     @endforeach
                     </tbody>

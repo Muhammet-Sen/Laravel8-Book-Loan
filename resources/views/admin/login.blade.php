@@ -32,7 +32,7 @@
                             <div class="form-group">
                                 <label class="label">Username</label>
                                 <div class="input-group">
-                                    <input id="email" type="email" class="form-control" placeholder="Username">
+                                    <input id="email" type="email" name="email" class="form-control" placeholder="Username">
                                     <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>
@@ -43,7 +43,7 @@
                             <div class="form-group">
                                 <label class="label">Password</label>
                                 <div class="input-group">
-                                    <input id="password" type="password" class="form-control" placeholder="*********">
+                                    <input id="password" type="password" name="password" class="form-control" placeholder="*********">
                                     <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>

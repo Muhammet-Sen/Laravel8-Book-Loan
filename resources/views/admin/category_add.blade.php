@@ -29,15 +29,11 @@
                         </div>
                         <div class="form-group">
                             <label>Description</label>
-                            <input type="text" class="form-control form-control-sm"  aria-label="Username">
+                            <input type="text" class="form-control form-control-sm" name="description" aria-label="Username">
                         </div>
                         <div class="form-group">
                             <label>Keyword</label>
-                            <input type="text" class="form-control form-control-sm"  aria-label="Username">
-                        </div>
-                        <div class="form-group">
-                            <label>Slug</label>
-                            <input type="text" name="slug" class="form-control form-control-sm"  aria-label="Username">
+                            <input type="text" class="form-control form-control-sm" name="keywords"  aria-label="Username">
                         </div>
                         <div class="form-group">
                             <label>Status</label>

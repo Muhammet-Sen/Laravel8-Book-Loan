@@ -1,4 +1,4 @@
-<div class="container-fluid page-body-wrapper">
+
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item nav-profile">
@@ -9,7 +9,7 @@
                 </div>
                 <div class="text-wrapper">
                     @auth
-                    <p class="profile-name">{{Auth::user()->name }}</p>
+                    <p class="d-block">{{Auth::user()->name }}</p>
                         <a href="{{route('admin_logout')}}" class="d-block">Logout</a>
                     @endauth
                 </div>
@@ -20,6 +20,12 @@
             <a class="nav-link" href="{{route('admin_category')}}">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Category</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('admin_products')}}">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">Product</span>
             </a>
         </li>
         <li class="nav-item">
@@ -94,3 +100,4 @@
         </li>
     </ul>
 </nav>
+
