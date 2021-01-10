@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href="./"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                <a href="{{route('home')}}"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
             </div>
             <div class="header-right">
                 <img src="{{asset('assets')}}/img/icons/search.png" alt="" class="search-trigger">
@@ -29,13 +29,22 @@
                     <span>2</span>
                 </a>
             </div>
+            @auth
             <div class="user-access">
-                <a href="#">Register</a>
-                <a href="#" class="in">Sign in</a>
+                <strong class="text-uppercase">{{Auth::user()->name }}</strong>
+                <a href="{{route('logout')}}" class="d-block">Logout</a>
             </div>
+            @endauth
+            @guest
+            <div class="user-access">
+                <a href="/register">Register</a>
+                <a href="/login" class="in">Sign in</a>
+            </div>
+            @endguest
+
             <nav class="main-menu mobile-menu">
                 <ul>
-                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a class="active" href="{{route('home')}}">Home</a></li>
                     <li><a href="./categories.html">Shop</a>
                         <ul class="sub-menu">
                             <li><a href="product-page.html">Product Page</a></li>

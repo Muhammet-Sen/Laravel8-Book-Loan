@@ -2,24 +2,25 @@
 
 
 @section('title','Admin DashBoard')
-
+@section('javascript')
+    <script src=" https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"    ></script>
+@endsection
 @section('content')
     <div class="main-panel">
 
         <div class="content-wrapper">
             <div class="col-md-7 grid-margin stretch-card">
                 <div class="card">
-                    <form role="form" action="{{route('admin_product_store')}}" method="post">
+                    <form role="form" action="{{route('admin_product_store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                     <div class="card-body">
                         <h4 class="card-title">Add Product</h4>
 
                         <div class="form-group">
-                            <label>Parent</label>
+                            <label>Category</label>
                             <select class="form-control form-control-lg" name="category_id" id="exampleFormControlSelect1">
-                                <option value="0" selected="selected">Main Product</option>
                                 @foreach($datalist as $rs)
-                                <option value="{{$rs->id}}">{{$rs->title}}</option>
+                                <option value="{{$rs->id}}">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -37,7 +38,18 @@
                         </div>
                         <div class="form-group">
                             <label>Detail</label>
-                            <input type="text" class="form-control form-control-sm" name="detail"  aria-label="Username">
+                            <textarea id="body" name="detail" ></textarea>
+                            <script>
+                                ClassicEditor
+                                    .create( document.querySelector( '#body' ) )
+                                    .catch( error => {
+                                        console.error( error );
+                                    } );
+                            </script>
+                        </div>
+                        <div class="form-group">
+                            <label>Image</label>
+                            <input type="file" class="form-control form-control-sm" name="image"  aria-label="Username">
                         </div>
                         <div class="form-group">
                             <label>Status</label>

@@ -1,11 +1,14 @@
+@php
+    $setting= \App\Http\Controllers\HomeController::getsetting()
+@endphp
 @extends('layouts.home')
 
-@section('keywords','Kitap, kütüphane,library,book')
-@section('title','Online | Library')
-@section('description')
-    Kamil Güleç Kütüphaseni resmi web sayfasıdır.
-@endsection
 
+@section('title', $setting->title)
+@section('description')
+    {{ $setting->description }}
+@endsection
+@section('keywords', $setting->keywords)
 @section('content')
 
     <section class="features-section spad">

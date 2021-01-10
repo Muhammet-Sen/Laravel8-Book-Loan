@@ -4,8 +4,6 @@
 @section('title','Admin DashBoard')
 
 @section('content')
-    <div class="main-panel">
-
         <div class="content-wrapper">
             <div class="col-md-7 grid-margin stretch-card">
                 <div class="card">
@@ -19,7 +17,7 @@
                             <select class="form-control form-control-lg" name="parent_id" id="exampleFormControlSelect1">
                                 <option value="0" selected="selected">Main Category</option>
                                 @foreach($datalist as $rs)
-                                <option value="{{$rs->id}}">{{$rs->title}}</option>
+                                <option value="{{$rs->id}}">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -53,16 +51,5 @@
                 </div>
             </div>
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-            <div class="container-fluid clearfix">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-            </div>
-        </footer>
-        <!-- partial -->
-    </div>
-    <!-- main-panel ends -->
 @endsection
 

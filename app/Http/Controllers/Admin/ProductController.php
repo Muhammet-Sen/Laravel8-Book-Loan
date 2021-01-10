@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -28,7 +29,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $datalist=Category::all();
+        $datalist = Category::with('children')->get();
         return view('admin.product_add',['datalist'=> $datalist]);
     }
 
@@ -44,9 +45,11 @@ class ProductController extends Controller
         $data->title=$request->input('title');
         $data->keywords=$request->input('keywords');
         $data->description=$request->input('description');
+        $data->category_id=$request->input('category_id');
         $data->status=$request->input('status');
         $data->user_id= Auth::id();
         $data->detail=$request->input('detail');
+        $data->image=Storage::putFile('images',$request->file('image'));
         $data->save();
         return redirect()->route('admin_products');
     }
@@ -71,7 +74,7 @@ class ProductController extends Controller
     public function edit(Product $product,$id)
     {
         $data=Product::find($id);
-        $datalist=Product::all();
+        $datalist = Category::with('children')->get();
         return view('admin.product_edit',['data'=>$data,'datalist'=>$datalist]);
     }
 
@@ -91,6 +94,9 @@ class ProductController extends Controller
         $data->status=$request->input('status');
         $data->user_id= Auth::id();
         $data->detail=$request->input('detail');
+        if ($request->file('image')!=null){
+            $data->image=Storage::putFile('images',$request->file('image'));
+        }
         $data->save();
         return redirect()->route('admin_products');
     }

@@ -19,35 +19,50 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce38b8f-4c0f-422b-b65a-c479b58062be" name="Default Changelist" comment="category database,adding,deleting and editing operations">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/2020_12_31_111446_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/2020_12_31_120731_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/2020_12_31_121448_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_122607_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_195930_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_201047_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_202035_product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
+    <list default="true" id="9ce38b8f-4c0f-422b-b65a-c479b58062be" name="Default Changelist" comment="Products CRUD Adding deleting editing and listing">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_191039_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_04_091027_create_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_170047_create_settings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/book.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/gallery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_101957_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/2020_12_31_082509_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_102959_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/2020_12_29_102959_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/2020_12_29_102959_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_191326_category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/2020_12_31_111446_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_095802_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/2020_12_31_120731_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_04_091324_image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/2020_12_31_121448_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_170353_setting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_122607_category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_195930_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_195930_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_201047_create_categories_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_202035_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/2020_12_31_202035_product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +227,8 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PHP\library\database\factories" />
+      <recent name="C:\PHP\library\database\migrations" />
+      <recent name="C:\PHP\library\database" />
       <recent name="C:\PHP\library\resources\views\home" />
     </key>
   </component>
@@ -243,7 +260,22 @@
       <workItem from="1609345780617" duration="2809000" />
       <workItem from="1609402912060" duration="18511000" />
       <workItem from="1609443366522" duration="3720000" />
-      <workItem from="1609492485286" duration="5965000" />
+      <workItem from="1609492485286" duration="6119000" />
+      <workItem from="1609512933557" duration="4335000" />
+      <workItem from="1609578999401" duration="3074000" />
+      <workItem from="1609592394278" duration="322000" />
+      <workItem from="1609597042232" duration="3985000" />
+      <workItem from="1609616228323" duration="5164000" />
+      <workItem from="1609672073643" duration="1190000" />
+      <workItem from="1609698531188" duration="6226000" />
+      <workItem from="1609749789547" duration="4421000" />
+      <workItem from="1609772454201" duration="1203000" />
+      <workItem from="1609844119783" duration="3790000" />
+      <workItem from="1609863825503" duration="9958000" />
+      <workItem from="1609922156724" duration="9178000" />
+      <workItem from="1610008464542" duration="7567000" />
+      <workItem from="1610045266663" duration="2785000" />
+      <workItem from="1610280162167" duration="7193000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1607441504742</created>
@@ -273,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609348581176</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Products CRUD Adding deleting editing and listing">
+      <created>1609498931848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609498931848</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +335,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="admin panel template added" />
     <MESSAGE value="category database,adding,deleting and editing operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="category database,adding,deleting and editing operations" />
+    <MESSAGE value="Products CRUD Adding deleting editing and listing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Products CRUD Adding deleting editing and listing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1608706186114">
@@ -307,14 +347,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609417433701" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609418722161">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609922227519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609418722161" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1609444708143">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609922227519" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1609699838644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609444708143" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609699838644" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609177337053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="763" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609171707308" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1609246625269">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1609937528437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609246625269" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609937528437" />
     <state x="821" y="222" key="RollbackChangesDialog" timestamp="1608714727255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -335,21 +375,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607437375951" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609348590410">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609498993464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609348590410" />
-    <state x="842" y="407" width="316" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1609444132527">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609498993464" />
+    <state x="842" y="407" width="316" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1609751303506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="842" y="407" width="316" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1609444132527" />
+    <state x="842" y="407" width="316" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1609751303506" />
     <state x="849" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609424217064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="849" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609424217064" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1609420949161">
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1610046288899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609420949161" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610046288899" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1610010432725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610010432725" />
   </component>
 </project>

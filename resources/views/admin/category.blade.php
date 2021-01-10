@@ -26,13 +26,16 @@
 
                     <tr class="table-info">
                         <td>{{$rs->id}}</td>
-                        <td>{{$rs->parent_id}}</td>
+                        <td>{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}
+                        </td>
                         <td>{{$rs->title}}</td>
                         <td>{{$rs->description}}</td>
                         <td> {{$rs->status}}</td>
                         <td> {{$rs->keywords}}</td>
-                        <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">Edit</a> </td>
-                        <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')"> Delete </a></td>
+                        <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}"><img src="{{asset('assets/admin/images')}}/edit.png" height="30" ></a> </td>
+                        <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')">
+                                <img src="{{asset('assets/admin/images')}}/delete.png" height="30" > </a>
+                        </td>
                     </tr>
                     @endforeach
                     </tbody>

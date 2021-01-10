@@ -4,13 +4,13 @@
         <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
                 <div class="profile-image">
-                    <img class="img-xs rounded-circle" src="{{asset('assets')}}/assets/images/faces/face8.jpg" alt="profile image">
+                    <img class="w3-border w3-padding" src="{{asset('assets/admin/images')}}/book.jpg" alt="asdqwe" height="75px">
                     <div class="dot-indicator bg-success"></div>
                 </div>
                 <div class="text-wrapper">
                     @auth
                     <p class="d-block">{{Auth::user()->name }}</p>
-                        <a href="{{route('admin_logout')}}" class="d-block">Logout</a>
+                        <a href="{{route('logout')}}" class="d-block">Logout</a>
                     @endauth
                 </div>
             </a>
@@ -67,9 +67,9 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/icons/font-awesome.html">
+            <a class="nav-link" href="{{route('admin_setting')}}">
                 <i class="menu-icon typcn typcn-user-outline"></i>
-                <span class="menu-title">Icons</span>
+                <span class="menu-title">Settings</span>
             </a>
         </li>
         <li class="nav-item">
