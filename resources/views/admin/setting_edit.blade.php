@@ -89,11 +89,11 @@
                             </script>
                         </div>
                         <div class="form-group">
-                            <label>Concat</label>
-                            <textarea id="concat" name="concat" >{{$data->concat}}</textarea>
+                            <label>Contact</label>
+                            <textarea id="contact" name="contact" >{{$data->contact}}</textarea>
                             <script>
                                 ClassicEditor
-                                    .create( document.querySelector( '#concat' ) )
+                                    .create( document.querySelector( '#contact' ) )
                                     .catch( error => {
                                         console.error( error );
                                     } );
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Update Product</button>
+                            <button type="submit" class="btn btn-primary">Update Settings</button>
                         </div>
                     </div>
                     </form>

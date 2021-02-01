@@ -9,8 +9,9 @@
     {{ $setting->description }}
 @endsection
 @section('keywords', $setting->keywords)
-@section('content')
 
+@section('content')
+    @include('home._slider')
     <section class="features-section spad">
         <div class="features-ads">
             <div class="container">

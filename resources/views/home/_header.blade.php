@@ -15,33 +15,42 @@
 <!-- Search model end -->
 
 <!-- Header Section Begin -->
-<header class="header-section">
+<header class="header-section" >
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href="{{route('home')}}"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                <a href=""><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
             </div>
             <div class="header-right">
-                <img src="{{asset('assets')}}/img/icons/search.png" alt="" class="search-trigger">
-                <img src="{{asset('assets')}}/img/icons/man.png" alt="">
-                <a href="#">
-                    <img src="{{asset('assets')}}/img/icons/bag.png" alt="">
-                    <span>2</span>
-                </a>
-            </div>
-            @auth
-            <div class="user-access">
-                <strong class="text-uppercase">{{Auth::user()->name }}</strong>
-                <a href="{{route('logout')}}" class="d-block">Logout</a>
-            </div>
-            @endauth
-            @guest
-            <div class="user-access">
-                <a href="/register">Register</a>
-                <a href="/login" class="in">Sign in</a>
-            </div>
-            @endguest
+                <nav class="main-menu mobile-menu">
+                   <ul>
+                       <li><img src="{{asset('assets')}}/img/icons/search.png" alt="" class="search-trigger"></li>
+                        <li><a href="#">
+                            <img src="{{asset('assets')}}/img/icons/bag.png" alt="">
+                            <span>2</span>
+                        </a></li>
+                       <li><a href="{{route('home')}}"> <img src="{{asset('assets')}}/img/icons/man.png" alt="">
+                               @guest
+                                   <a href="/register">Register</a>
+                                   <a href="/login" class="in">Sign in</a>
 
+                               @endguest
+                               @auth
+                                   <strong class="text-uppercase">{{Auth::user()->name }}</strong>
+                                   <ul class="sub-menu">
+                                       <li><a href="{{route('myprofile')}}">My account</a></li>
+                                       <li><a href="{{route('logout')}}" class="d-block">Logout</a></li>
+                                   </ul>
+                               @endauth
+
+                           </a></li>
+                   </ul>
+                </nav>
+            </div>
+            <div class="user-access">
+
+
+            </div>
             <nav class="main-menu mobile-menu">
                 <ul>
                     <li><a class="active" href="{{route('home')}}">Home</a></li>
@@ -52,9 +61,10 @@
                             <li><a href="check-out.html">Check out</a></li>
                         </ul>
                     </li>
-                    <li><a href="./product-page.html">About</a></li>
+                    <li><a href="{{route('aboutus')}}">About</a></li>
+                    <li><a href="{{route('references')}}">References</a></li>
                     <li><a href="./check-out.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </nav>
         </div>

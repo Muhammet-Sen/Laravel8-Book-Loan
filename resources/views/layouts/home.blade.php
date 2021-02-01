@@ -32,9 +32,6 @@
     <div >
         @include('home._header')
     </div>
-    <div >
-        @include('home._slider')
-    </div>
         @section('content')
             içerik alanı
         @show

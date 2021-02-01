@@ -49,9 +49,9 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
+            <a class="nav-link" href="{{route('admin_message')}}">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
-                <span class="menu-title">Form elements</span>
+                <span class="menu-title">Contact Messages</span>
             </a>
         </li>
         <li class="nav-item">

@@ -1,6 +1,6 @@
 <!-- Hero Slider Begin -->
 <section class="hero-slider">
-    <div class="hero-items owl-carousel">
+    <div class="hero-items owl-carousel ">
         <div class="single-slider-item set-bg" data-setbg="{{asset('assets')}}/img/slider-1.jpg">
             <div class="container">
                 <div class="row">
