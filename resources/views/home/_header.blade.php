@@ -1,3 +1,6 @@
+@php
+    $parentCategories = \App\Http\Controllers\HomeController::categoryList()
+@endphp
 <!-- Page Preloder -->
 <div id="preloder">
     <div class="loader"></div>
@@ -7,9 +10,11 @@
 <div class="search-model">
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch">+</div>
-        <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Search here.....">
+        <form action="{{route('getproduct')}}" method="post" class="search-model-form">
+            @csrf
+            @livewire('search')
         </form>
+        @livewireScripts
     </div>
 </div>
 <!-- Search model end -->
@@ -19,7 +24,7 @@
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href=""><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                <a href="{{route('home')}}"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
             </div>
             <div class="header-right">
                 <nav class="main-menu mobile-menu">
@@ -51,22 +56,7 @@
 
 
             </div>
-            <nav class="main-menu mobile-menu">
-                <ul>
-                    <li><a class="active" href="{{route('home')}}">Home</a></li>
-                    <li><a href="./categories.html">Shop</a>
-                        <ul class="sub-menu">
-                            <li><a href="product-page.html">Product Page</a></li>
-                            <li><a href="shopping-cart.html">Shopping Card</a></li>
-                            <li><a href="check-out.html">Check out</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{route('aboutus')}}">About</a></li>
-                    <li><a href="{{route('references')}}">References</a></li>
-                    <li><a href="./check-out.html">Blog</a></li>
-                    <li><a href="{{route('contact')}}">Contact</a></li>
-                </ul>
-            </nav>
+            @include('home._category')
         </div>
     </div>
 </header>

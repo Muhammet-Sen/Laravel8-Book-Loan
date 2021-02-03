@@ -28,7 +28,11 @@ Route::get('/shop',[HomeController::class, 'shop'])->name('shop');
 Route::get('/blog',[HomeController::class, 'blog'])->name('blog');
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage',[HomeController::class, 'sendmessage'])->name('sendmessage');
-
+Route::get('/categoryproducts/{id}',[HomeController::class, 'categoryproducts'])->name('categoryproducts');
+Route::get('/product/{id}',[HomeController::class, 'product'])->name('product');
+Route::get('/addtocart/{id}',[HomeController::class, 'index'])->whereNumber('id')->name('addtocart');
+Route::post('/getproduct',[HomeController::class, 'getproduct'])->name('getproduct');
+Route::get('/productlist/{search}',[HomeController::class, 'productlist'])->name('productlist');
 //Admin
 Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class,'index'])->name('admin_home')->middleware('auth');
 Route::middleware('auth')->prefix('admin')->group(function (){
