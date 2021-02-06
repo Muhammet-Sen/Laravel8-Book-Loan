@@ -1,13 +1,11 @@
 @extends('layouts.admin')
 
 
-@section('title','Admin DashBoard')
+@section('title','Category')
 
 @section('content')
             <div class="card-body">
-                <h4 class="card-title">Table with contextual classes</h4>
-                <p class="card-description"> Add class <code>.table-{color}</code> </p>
-                <a href="{{route('admin_category_add')}}" type="button" class="btn btn-block btn-info" style="width: 200px">Add Category</a>
+                <a href="{{route('admin_category_add')}}" type="button" class="btn btn-block btn-info" style="width: 200px">Add Category</a><br>
                 <table class="table table-bordered">
                     <thead>
                     <tr>

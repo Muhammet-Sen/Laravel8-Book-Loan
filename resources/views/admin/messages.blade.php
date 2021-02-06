@@ -5,7 +5,7 @@
 
 @section('content')
             <div class="card-body">
-                <h4 class="card-title">Table with contextual classes</h4>
+                <h4 class="card-title">Contact Messages</h4>
                 @include('home.message')
 
                 <table class="table table-bordered">
@@ -34,7 +34,8 @@
                         <td> {{$rs->subject}}</td>
                         <td> {{$rs->message}}</td>
                         <td> {{$rs->note}}</td>
-                        <td><a href="{{route('admin_message_edit', ['id' => $rs->id])}}"><img src="{{asset('assets/admin/images')}}/edit.png" height="30" > </a> </td>
+                        <td><a href="{{route('admin_message_edit', ['id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">
+                                <img src="{{asset('assets/admin/images')}}/edit.png" height="30" > </a> </td>
                         <td><a href="{{route('admin_message_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')"> <img src="{{asset('assets/admin/images')}}/delete.png" height="50px" > </a></td>
                     </tr>
                     @endforeach

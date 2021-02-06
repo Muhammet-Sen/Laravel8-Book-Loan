@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Faq;
 use App\Models\Image;
 use App\Models\Message;
 use App\Models\Product;
+use App\Models\Review;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,6 +24,12 @@ class HomeController extends Controller
     public static function getsetting(){
 
         return Setting::first();
+    }
+    public static function countreview($id){
+        return Review::where('product_id',$id)->count();
+    }
+    public static function avrgreview($id){
+        return Review::where('product_id',$id)->average('rate');
     }
     //
     public function index()
@@ -68,9 +76,10 @@ class HomeController extends Controller
         $data=Product::find($id);
         $picked=Product::select('id','title','image','status')->limit(4)->inRandomOrder()->get();
         $datalist= Image::where('product_id',$id)->get();
+        $reviews= Review::where('product_id',$id)->get();
         #print_r($data);
         #exit();
-        return view('home.productdetail',['data'=>$data,'picked'=>$picked,'datalist'=>$datalist]);
+        return view('home.productdetail',['data'=>$data,'reviews'=>$reviews,'picked'=>$picked,'datalist'=>$datalist]);
     }
     public function categoryproducts($id){
 
@@ -88,9 +97,9 @@ class HomeController extends Controller
         $setting= Setting::first();
         return view('home.references',['setting'=>$setting]);
     }
-    public function blog(){
-
-        return view('home.about');
+    public function faq(){
+        $datalist= Faq::all()->sortBy('position');
+        return view('home.faq',['datalist'=>$datalist]);
     }
     public function shop(){
 

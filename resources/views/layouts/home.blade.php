@@ -28,12 +28,11 @@
 </head>
 
 <body>
-
     <div >
         @include('home._header')
     </div>
         @section('content')
-            içerik alanı
+
         @show
     <div >
         @include('home._footer')

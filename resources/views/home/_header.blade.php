@@ -30,9 +30,9 @@
                 <nav class="main-menu mobile-menu">
                    <ul>
                        <li><img src="{{asset('assets')}}/img/icons/search.png" alt="" class="search-trigger"></li>
-                        <li><a href="#">
+                        <li><a href="{{route('user_shopcart')}}">
                             <img src="{{asset('assets')}}/img/icons/bag.png" alt="">
-                            <span>2</span>
+                            <span>{{\App\Http\Controllers\ShopcartController::countshopcart()}}</span>
                         </a></li>
                        <li><a href="{{route('home')}}"> <img src="{{asset('assets')}}/img/icons/man.png" alt="">
                                @guest
@@ -43,7 +43,10 @@
                                @auth
                                    <strong class="text-uppercase">{{Auth::user()->name }}</strong>
                                    <ul class="sub-menu">
-                                       <li><a href="{{route('myprofile')}}">My account</a></li>
+                                       <li><a href="{{route('myprofile')}}">My Account</a></li>
+                                       <li><a href="{{route('myreviews')}}">My Reviews</a></li>
+                                       <li><a href="{{route('user_shopcart')}}">My Shopcart</a></li>
+                                       <li><a href="{{route('user_orders')}}">My Orders</a></li>
                                        <li><a href="{{route('logout')}}" class="d-block">Logout</a></li>
                                    </ul>
                                @endauth
@@ -67,19 +70,19 @@
             <div class="col-md-4">
                 <div class="header-item">
                     <img src="{{asset('assets')}}/img/icons/delivery.png" alt="">
-                    <p>Free shipping on orders over $30 in USA</p>
+                    <p>Free shipping on orders over 50 TL in SAMSUN</p>
                 </div>
             </div>
             <div class="col-md-4 text-left text-lg-center">
                 <div class="header-item">
-                    <img src="{{asset('assets')}}/img/icons/voucher.png" alt="">
-                    <p>20% Student Discount</p>
+
+                    <p>@include('home.message')</p>
                 </div>
             </div>
             <div class="col-md-4 text-left text-xl-right">
                 <div class="header-item">
                     <img src="{{asset('assets')}}/img/icons/sales.png" alt="">
-                    <p>30% off on dresses. Use code: 30OFF</p>
+                    <p>20% Student Discount</p>
                 </div>
             </div>
         </div>

@@ -32,8 +32,8 @@
     <div class="container-fluid page-body-wrapper">
     @include('admin._sidebar')
         <div class="main-panel">
-    @yield('content')
-
+    @section('content')
+            @show
     @include('admin._footer')
 
         </div>

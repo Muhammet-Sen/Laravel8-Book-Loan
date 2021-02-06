@@ -1,13 +1,12 @@
 @extends('layouts.admin')
 
 
-@section('title','Admin DashBoard')
+@section('title','Product')
 
 @section('content')
             <div class="card-body">
-                <h4 class="card-title">Table with contextual classes</h4>
-                <p class="card-description"> Add class <code>.table-{color}</code> </p>
-                <a href="{{route('admin_product_add')}}" type="button" class="btn btn-block btn-info" style="width: 200px">Add Product</a>
+
+                <a href="{{route('admin_product_add')}}" type="button" class="btn btn-block btn-info" style="width: 200px">Add Product</a><br>
                 <table class="table table-bordered">
                     <thead>
                     <tr>
@@ -43,8 +42,10 @@
                         <td><a href="{{route('admin_image_add',['product_id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">
                                 <img src="{{asset('assets/admin/images')}}/gallery.png" height="30" ></a>
                         </td>
-                        <td><a href="{{route('admin_product_edit', ['id' => $rs->id])}}"><img src="{{asset('assets/admin/images')}}/edit.png" height="30" > </a> </td>
-                        <td><a href="{{route('admin_product_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')"> <img src="{{asset('assets/admin/images')}}/delete.png" height="50px" > </a></td>
+                        <td><a href="{{route('admin_product_edit', ['id' => $rs->id])}}">
+                                <img src="{{asset('assets/admin/images')}}/edit.png" height="30" > </a> </td>
+                        <td><a href="{{route('admin_product_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')">
+                                <img src="{{asset('assets/admin/images')}}/delete.png" height="50px" > </a></td>
                     </tr>
                     @endforeach
                     </tbody>
