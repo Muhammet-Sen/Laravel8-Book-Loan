@@ -3,11 +3,10 @@
 
 @section('title','Admin Order List')
 
-@section('content')
-        <div class="cart-page">
-            <div class="container">
-                <div class="cart-table">
-                    <table>
+@section('content')<br>
+        <div class="card-body">
+
+                    <table class="table table-bordered">
                         <thead>
                         <tr>
                             <th class="product-h">Id</th>
@@ -22,9 +21,9 @@
                         </thead>
                         <tbody>
                         @foreach($datalist as $rs)
-                            <tr>
+                            <tr class="table-info">
                                 <td class="product-col">{{$rs->id}}</td>
-                                <td class="price-col">{{$rs->user->name}}</td>
+                                <td class="price-col">{{$rs->name}}</td>
                                 <td class="price-col">{{$rs->name}}</td>
                                 <td class="price-col">{{$rs->email}}</td>
                                 <td class="price-col">{{$rs->phone}}</td>

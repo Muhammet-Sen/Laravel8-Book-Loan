@@ -17,8 +17,7 @@
                             <li><a href="{{route('myprofile')}}">My account</a></li>
                             <li><a href="{{route('user_orders')}}">My Orders</a></li>
                             <li><a href="{{route('myreviews')}}">My Reviews</a></li>
-                            <li><a href="">My Shop Cart</a></li>
-                            <li><a href="">My Messages</a></li>
+                            <li><a href="{{route('user_shopcart')}}">My Shop Cart</a></li>
                             <li><a href="{{route('logout')}}">Logout</a></li>
                         </ul>
                     </div>

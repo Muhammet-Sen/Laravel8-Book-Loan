@@ -3,6 +3,7 @@
 @section('content')
 
     <div class="card-body">
+        <h4 class="card-title">Reviews</h4>
         <table class="table table-bordered">
             <thead>
             <tr>
@@ -24,8 +25,8 @@
                 <tr class="table-info">
                     <td>{{$rs->id}}</td>
                     <td>
-                        <a href="{{route('admin_user_show',['id'=>$rs->user->id])}}" onclick="return  !window.open(this.href,'','top=50 left=100 width=700,height=700')">
-                            {{$rs->user->name}}</a>
+                        <a href="{{route('admin_user_show',['id'=>$rs->id])}}" onclick="return  !window.open(this.href,'','top=50 left=100 width=700,height=700')">
+                            {{Auth::user()->name }}</a>
                     </td>
                     <td><a href="{{route('product',['id'=>$rs->product->id])}}" target="_blank">
                             {{$rs->product->title}}

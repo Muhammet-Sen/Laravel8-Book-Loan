@@ -25,7 +25,7 @@
                             <th> Id </th><td>{{$data->id}}</td>
                         </tr>
                         <tr>
-                            <th> UserName </th><td>{{$data->user->name}}</td>
+                            <th> UserName </th><td>{{$data->name}}</td>
                         </tr>
                         <tr>
                             <th> Name </th><td>{{$data->name}}</td>
@@ -77,7 +77,7 @@
                 </form>
                 </table>
 
-                <table>
+                <table class="table table-bordered">
                     <thead>
                     <tr>
                         <th class="product-h">Product</th>
@@ -92,15 +92,15 @@
                         <form role="form" action="{{route('admin_order_item_update',['id' => $rs->id])}}" method="post">
                             <tr>
                                 <td class="product-col">
-                                    @if($rs->product->image)
-                                        <img src="{{\Illuminate\Support\Facades\Storage::url($rs->product->image)}}" height="75" alt="">
+                                    @if($rs->image)
+                                        <img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" height="75" alt="">
                                         <div class="p-title">
-                                            <a href="{{route('product',['id'=>$rs->product->id])}}">
+                                            <a href="{{route('product',['id'=>$rs->id])}}">
                                                 <h5>{{$rs->product->title}}</h5></a>
                                         </div>
                                     @endif
                                 </td>
-                                <td class="price-col">{{$rs->product->price}}</td>
+                                <td class="price-col">{{$rs->price}}</td>
                                 <td class="quantity-col">
                                     {{$rs->quantity}}
                                 </td>

@@ -17,14 +17,14 @@
                     <form role="form" action="{{route('admin_review_update',['id' => $data->id])}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card-body">
-                            <h4 class="card-title">Message Detail</h4>
+                            <h4 class="card-title">Reviews Detail</h4>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th> Id </th><td>{{$data->id}}</td>
                                     </tr>
                                     <tr>
-                                        <th> Name </th><td>{{$data->user->name}}</td>
+                                        <th> Name </th><td>{{Auth::user()->name }}</td>
                                     </tr>
                                         <th> Product </th><td>{{$data->product->title}}</td>
                                     <tr>

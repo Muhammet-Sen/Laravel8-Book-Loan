@@ -26,8 +26,8 @@
                     <tr class="table-info">
                         <td>{{$rs->id}}</td>
                         <td>
-                            @if($rs->image)
-                                <img src="{{Illuminate\Support\Facades\Storage::url($rs->profile_photo_path)}}" height="150px" alt="">
+                            @if ($rs->profile_photo_path)
+                                <img src="{{Illuminate\Support\Facades\Storage::url($rs->profile_photo_path)}}" height="100" alt="">
                             @endif
                         </td>
                         <td>{{$rs->name}}</td>
