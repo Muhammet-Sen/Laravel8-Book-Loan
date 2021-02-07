@@ -7,6 +7,7 @@
             <thead>
             <tr>
                 <th> ID </th>
+                <th> Name </th>
                 <th> Product </th>
                 <th> Subject </th>
                 <th> Review </th>
@@ -22,6 +23,10 @@
             @foreach($datalist as $rs)
                 <tr class="table-info">
                     <td>{{$rs->id}}</td>
+                    <td>
+                        <a href="{{route('admin_user_show',['id'=>$rs->user->id])}}" onclick="return  !window.open(this.href,'','top=50 left=100 width=700,height=700')">
+                            {{$rs->user->name}}</a>
+                    </td>
                     <td><a href="{{route('product',['id'=>$rs->product->id])}}" target="_blank">
                             {{$rs->product->title}}
                         </a>

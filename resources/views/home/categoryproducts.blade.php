@@ -12,22 +12,13 @@
                     <div class="col-lg-12">
                         <div class="categories-filter">
                             <br>
-                            <div class="cf-left">
-                                <form action="#">
-
-                                    <select class="sort" style="display: none;">
-                                        <option value="">Sort by</option>
-                                        <option value="">Orders</option>
-                                        <option value="">Newest</option>
-                                        <option value="">Price</option>
-                                    </select><div class="nice-select sort" tabindex="0"><span class="current">Sort by</span><ul class="list"><li data-value="" class="option selected focus">Sort by</li><li data-value="" class="option">Orders</li><li data-value="" class="option">Newest</li><li data-value="" class="option">Price</li></ul></div>
-                                </form>
-                            </div>
+                            <h2>{{$data->title}}<span></span></h2>
                             <div class="cf-right">
+
                                 <span>{{count($datalist)}} Products</span>
+                                <a href="#" class="active">1</a>
                                 <a href="#">2</a>
-                                <a href="#" class="active">4</a>
-                                <a href="#">6</a>
+                                <a href="#">3</a>
                             </div>
                         </div>
                     </div>
@@ -54,13 +45,6 @@
                     </div>
                 @endforeach
 
-            </div>
-            <div class="more-product">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <a href="#" class="primary-btn">Load More</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

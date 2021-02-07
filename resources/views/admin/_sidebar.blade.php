@@ -1,21 +1,27 @@
 
+
+
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item nav-profile">
-            <a href="#" class="nav-link">
-                <div class="profile-image">
-                    <img class="w3-border w3-padding" src="{{asset('assets/admin/images')}}/book.jpg" alt="asdqwe" height="75px">
-                    <div class="dot-indicator bg-success"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    @if(Auth::user()->profile_photo_path)
+                        <img class="img-xs rounded-circle" src="{{Illuminate\Support\Facades\Storage::url(Auth::user()->profile_photo_path)}}" alt="profile image">
+                    @endif
                 </div>
-                <div class="text-wrapper">
-                    @auth
-                    <p class="d-block">{{Auth::user()->name }}</p>
-                        <a href="{{route('logout')}}" class="d-block">Logout</a>
-                    @endauth
+                <div class="col-md-9">
+                        @auth
+                            <p class="d-block">{{Auth::user()->name }}</p>
+                            <a href="{{route('logout')}}" class="d-block">Logout</a>
+                        @endauth
                 </div>
-            </a>
+
+            </div>
+
+
         </li>
-        <li class="nav-item nav-category">Main Menu</li>
+        <li class="nav-item nav-category">Menu</li>
         <li class="nav-item">
             <a class="nav-link" href="{{route('admin_category')}}">
                 <i class="menu-icon typcn typcn-document-text"></i>
@@ -82,30 +88,10 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                <i class="menu-icon typcn typcn-document-add"></i>
-                <span class="menu-title">User Pages</span>
-                <i class="menu-arrow"></i>
+            <a class="nav-link" href="{{route('admin_user')}}">
+                <i class="menu-icon typcn typcn-user-outline"></i>
+                <span class="menu-title">User Lists</span>
             </a>
-            <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/login.html"> Login </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/register.html"> Register </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/error-404.html"> 404 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/error-500.html"> 500 </a>
-                    </li>
-                </ul>
-            </div>
         </li>
     </ul>
 </nav>

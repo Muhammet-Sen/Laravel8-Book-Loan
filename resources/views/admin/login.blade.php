@@ -29,6 +29,7 @@
                     <div class="auto-form-wrapper">
                         <form action="{{route('admin_logincheck')}}" method="post">
                             @csrf
+                            @include('home.message')
                             <div class="form-group">
                                 <label class="label">Username</label>
                                 <div class="input-group">

@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="page-breadcrumb">
-                        <h2>Shirts<span>.</span></h2>
+                        <h2>{{$data->title}}<span>.</span></h2>
                         <a href="{{route('home')}}">Home</a>
                         <a>{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($data->category,$data->category->title)}}</a>
                         <a class="active" >{{$data->title}}</a>
@@ -28,10 +28,6 @@
     <!-- Product Page Section Beign -->
     <section class="product-page">
         <div class="container">
-            <div class="product-control">
-                <a href="#">Previous</a>
-                <a href="#">Next</a>
-            </div>
             <div class="row">
                 <div class="col-md-5">
                     <div class="product-slider owl-carousel">
@@ -102,7 +98,7 @@
                                             <div class="single-reviews">
                                                 <div class="review-heading">
                                                     <div><a>
-                                                            <i class="fa fa-user-o"></i><strong>{{$rs->user->name}}</strong>
+                                                            <i class="fa fa-user-o"></i><strong>{{$rs->title}}</strong>
                                                             <i class="fa fa-clock-o"></i>{{$rs->created_at}}
                                                         </a>
                                                     </div>

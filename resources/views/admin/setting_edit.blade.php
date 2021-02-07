@@ -15,11 +15,11 @@
                         @csrf
                     <div class="card-body">
                         <h4 class="card-title">Edit Settings</h4>
-                        <input type="hidden" id="id" class="form-control" name="id" value="{{$data->id}}" aria-label="Username">
+                        <input type="hidden" id="id" class="form-control" value="{{$data->id}}" name="id" aria-label="Username">
 
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" id="title" class="form-control" name="title" value="{{$data->title}}" aria-label="Username">
+                            <input type="text" id="title" class="form-control" value="{{$data->title}}" name="title" aria-label="Username">
                         </div>
                         <div class="form-group">
                             <label>Description</label>

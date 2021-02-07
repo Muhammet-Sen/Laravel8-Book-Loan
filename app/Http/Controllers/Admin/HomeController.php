@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+    public function __contruct()
+    {
+
+        $this->middleware('admin');
+    }
     public function index()
     {
 
