@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href="{{route('home')}}"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                <a href="{{route('home')}}"><img src="{{asset('assets')}}/img/kbu6.png" alt=""></a>
             </div>
             <div class="header-right">
                 <nav class="main-menu mobile-menu">

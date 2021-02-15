@@ -8,13 +8,13 @@
     <section class="page-add">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="page-breadcrumb">
                         <h2>Contact us<span>.</span></h2><br>
                         {!! $setting->contact !!}
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-7">
 
                 </div>
             </div>

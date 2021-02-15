@@ -9,7 +9,7 @@
     <section class="page-add">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-8">
                     <div class="page-breadcrumb">
                         <h2>{{$data->title}}<span>.</span></h2>
                         <a href="{{route('home')}}">Home</a>
@@ -17,7 +17,7 @@
                         <a class="active" >{{$data->title}}</a>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-4">
 
                 </div>
             </div>
@@ -53,9 +53,9 @@
                 </div>
                 <div class="col-md-6">
                     <div class="product-content">
-                        <h2>{{$data->title}}</h2>
+                        <h2>{{$data->book_name}}</h2>
                         <div class="pc-meta">
-                            <h5>$22.90</h5>
+                            <h5>{{$data->author}}</h5>
                             @php
                                 $avgrev=\App\Http\Controllers\HomeController::avrgreview($data->id);
                                 $countreview=\App\Http\Controllers\HomeController::countreview($data->id);
@@ -70,8 +70,8 @@
                         </div>
                         <p>{{$data->description}}</p>
                         <ul class="tags">
-                            <li><span>Category :</span> Men’s Wear</li>
-                            <li><span>Tags :</span> man, shirt, dotted, elegant, cool</li>
+                            <li><span>Category :</span> {{$data->title}}</li>
+                            <li><span>Tags :</span> {{$data->keywords}}</li>
                         </ul>
                         <form action="{{route('user_shopcart_add',['id'=>$data->id])}}" method="post">
                             @csrf
@@ -98,7 +98,8 @@
                                             <div class="single-reviews">
                                                 <div class="review-heading">
                                                     <div><a>
-                                                            <i class="fa fa-user-o"></i><strong>{{$rs->title}}</strong>
+                                                            <i class="fa fa-user-o"></i><strong>{{$rs->user->name}}</strong>
+
                                                             <i class="fa fa-clock-o"></i>{{$rs->created_at}}
                                                         </a>
                                                     </div>
@@ -147,15 +148,16 @@
             </div>
             <div class="row">
                 @foreach($picked as $rs)
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="single-product-item">
                         <figure>
-                            <a href="{{route('product',['id'=>$rs->id])}}"><img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" alt=""></a>
                             <div class="p-status">new</div>
+                            <div class="hover-icon">
+                                <a href="{{route('product',['id'=>$rs->id])}}" class="pop-up"><img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" alt=""></a>
+                            </div>
                         </figure>
                         <div class="product-text">
                             <h6>{{$rs->title}}</h6>
-                            <p>$22.90</p>
                         </div>
                     </div>
                 </div>

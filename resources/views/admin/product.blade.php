@@ -13,9 +13,12 @@
                         <th> Id </th>
                         <th> Category </th>
                         <th> Title </th>
-                        <th>Description</th>
+                        <th> Book Name </th>
+                        <th> Author </th>
+                        <th> Publisher </th>
+
                         <th> Status </th>
-                        <th>Keywords</th>
+
                         <th>Image</th>
                         <th>Image Gallery</th>
                         <th> Edit </th>
@@ -31,9 +34,11 @@
                             {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}
                         </td>
                         <td>{{$rs->title}}</td>
-                        <td>{{$rs->description}}</td>
+                        <td>{{$rs->book_name}}</td>
+                        <td>{{$rs->author}}</td>
+                        <td>{{$rs->publisher}}</td>
+
                         <td> {{$rs->status}}</td>
-                        <td> {{$rs->keywords}}</td>
                         <td>
                             @if($rs->image)
                                 <img src="{{Illuminate\Support\Facades\Storage::url($rs->image)}}" height="150px" alt="">

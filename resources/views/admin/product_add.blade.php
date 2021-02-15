@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 
-@section('title','Admin DashBoard')
+@section('title','Product Add')
 @section('javascript')
     <script src=" https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"    ></script>
 @endsection
@@ -27,6 +27,18 @@
                         <div class="form-group">
                             <label>Title</label>
                             <input type="text" class="form-control" name="title" aria-label="Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Book Name</label>
+                            <input type="text" class="form-control" name="book_name" aria-label="Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Author</label>
+                            <input type="text" class="form-control" name="author" aria-label="Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Publisher</label>
+                            <input type="text" class="form-control" name="publisher" aria-label="Username">
                         </div>
                         <div class="form-group">
                             <label>Description</label>

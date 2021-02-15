@@ -39,7 +39,7 @@
                                 <a href="{{route('product',['id'=>$rs->id])}}">
                                     <h6>{{$rs->title}}</h6>
                                 </a>
-                                <p>$22.90</p>
+                                <p>{{$rs->author}}</p>
                             </div>
                         </div>
                     </div>

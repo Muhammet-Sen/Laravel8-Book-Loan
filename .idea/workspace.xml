@@ -22,19 +22,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce38b8f-4c0f-422b-b65a-c479b58062be" name="Default Changelist" comment="User Admin Role,Admin USer Panel Role">
+    <list default="true" id="9ce38b8f-4c0f-422b-b65a-c479b58062be" name="Default Changelist" comment="Last edition Admin Panel">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_153009_add_column_to_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_091440_add_date_to_reviews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kbu1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kbu2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kbu3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kbu4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kbu5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kbu6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/pc_184.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/pc_480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/pc_520.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/wh_true.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/wi_500.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/order_items.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/order_items.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/review_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/categoryproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/categoryproducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/productdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/productdetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_shopcart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_shopcart.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +274,9 @@
       <workItem from="1612428222178" duration="18354000" />
       <workItem from="1612522216300" duration="20794000" />
       <workItem from="1612597024531" duration="16580000" />
-      <workItem from="1612694970691" duration="13339000" />
+      <workItem from="1612694970691" duration="19732000" />
+      <workItem from="1612944501321" duration="14528000" />
+      <workItem from="1612965947249" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1607441504742</created>
@@ -333,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612701806290</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Last edition Admin Panel">
+      <created>1612711633205</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612711633205</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,17 +384,18 @@
     <MESSAGE value="Search Products Product Detail Home Products" />
     <MESSAGE value="Reviews,Faq,Shopcart,Order" />
     <MESSAGE value="User Admin Role,Admin USer Panel Role" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Admin Role,Admin USer Panel Role" />
+    <MESSAGE value="Last edition Admin Panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last edition Admin Panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1608706186114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1608706186114" />
-    <state x="552" y="178" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612699229266">
+    <state x="552" y="178" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612955804777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612699229266" />
+    <state x="552" y="178" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612955804777" />
     <state x="1067" y="302" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612608401831">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -405,10 +428,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607437375951" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612701815516">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612711645013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612701815516" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612711645013" />
     <state x="842" y="407" width="316" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612002763542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -417,18 +440,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612532731159" />
-    <state x="978" y="333" width="544" height="535" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612532577581">
+    <state x="978" y="333" width="544" height="535" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612949415848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="978" y="333" width="544" height="535" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612532577581" />
+    <state x="978" y="333" width="544" height="535" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612949415848" />
     <state x="849" y="254" width="358" height="550" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612702237820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="849" y="254" width="358" height="550" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612702237820" />
-    <state x="667" y="119" width="696" height="801" key="find.popup" timestamp="1612619283300">
+    <state x="667" y="119" width="696" height="801" key="find.popup" timestamp="1612725829810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="119" width="696" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612619283300" />
+    <state x="667" y="119" width="696" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612725829810" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1610010432725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

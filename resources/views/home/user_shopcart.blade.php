@@ -31,9 +31,9 @@
                     <thead>
                     <tr>
                         <th class="product-h">Product</th>
-                        <th>Price</th>
+                        <th></th>
                         <th class="quan">Quantity</th>
-                        <th>Total</th>
+                        <th></th>
                         <th></th>
                     </tr>
                     </thead>
@@ -58,7 +58,7 @@
                                     </form>
                                 </div>
                             </td>
-                            <td class="total">{{$rs->product->price * $rs->quantity}}</td>
+                           
                             <td class="product-close" ><a href="{{route('user_shopcart_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!!!')">X</a></td>
                         </tr>
                     @endforeach

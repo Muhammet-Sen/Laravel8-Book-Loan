@@ -31,6 +31,18 @@
                         <input type="text" class="form-control" name="title" value="{{$data->title}}" aria-label="Username">
                     </div>
                     <div class="form-group">
+                        <label>Book Name</label>
+                        <input type="text" class="form-control" name="book_name" value="{{$data->book_name}}" aria-label="Username">
+                    </div>
+                    <div class="form-group">
+                        <label>Author</label>
+                        <input type="text" class="form-control" name="author" value="{{$data->author}}" aria-label="Username">
+                    </div>
+                    <div class="form-group">
+                        <label>Publisher</label>
+                        <input type="text" class="form-control" name="publisher" value="{{$data->publisher}}" aria-label="Username">
+                    </div>
+                    <div class="form-group">
                         <label>Description</label>
                         <input type="text" class="form-control form-control-sm" value="{{$data->description}}" name="description" aria-label="Username">
                     </div>
@@ -66,7 +78,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div>
                         <button type="submit" class="btn btn-primary">Update Product</button>
                     </div>
                 </div>
